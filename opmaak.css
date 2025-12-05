@@ -1,0 +1,56 @@
+/* ------------------------------------------------------ */
+/*  Style.css - Schoolkrant Verzorgingsstaat (Havo 4)     */
+/* ------------------------------------------------------ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2b5cff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Artikels */
+article {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px; /* Klein detail zodat het niet te professioneel is */
+}
+
+h2 {
+    margin-top: 0;
+    color: #2b5cff;
+}
+
+.naam {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #333;
+}
