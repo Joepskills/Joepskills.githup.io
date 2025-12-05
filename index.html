@@ -2,52 +2,115 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Ronaldo & Weer in Leiden</title>
+    <title>Schoolkrant Verzorgingsstaat</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2b5cff;
+            color: white;
+            padding: 20px;
             text-align: center;
-            background: #f4f4f4;
         }
-        img {
-            width: 300px;
-            border-radius: 10px;
-            margin-top: 20px;
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            padding-top: 20px;
         }
-        .weather {
+
+        article {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #2b5cff;
+        }
+
+        .naam {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
             margin-top: 30px;
-            font-size: 1.2em;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>🇵🇹 Cristiano Ronaldo & het Weer in Leiden 🌤️</h1>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
+<header>
+    <h1>Schoolkrant - Verzorgingsstaat Editie</h1>
+    <p>Gemaakt door leerlingen van Havo 4</p>
+</header>
 
-    <div class="weather" id="weather">
-        Het laden van het weerbericht...
-    </div>
+<div class="container">
 
-    <script>
-        async function getWeather() {
-            try {
-                const apiKey = "YOUR_API_KEY"; // Zie uitleg hieronder
-                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Leiden,nl&units=metric&lang=nl&appid=${apiKey}`);
-                const data = await response.json();
+    <!-- Artikel 1: Onderwijs -->
+    <article>
+        <h2>Onderwijs verandert door vergrijzing en flexibilisering</h2>
+        <p class="naam">Door: <strong>Naam leerling 1</strong></p>
 
-                const weatherDiv = document.getElementById("weather");
-                weatherDiv.innerHTML = `
-                    🌡️ Temperatuur: ${data.main.temp}°C <br>
-                    ☁️ Weer: ${data.weather[0].description} <br>
-                    💨 Wind: ${data.wind.speed} m/s
-                `;
-            } catch (error) {
-                document.getElementById("weather").innerText = "Kon het weerbericht niet ophalen.";
-            }
-        }
+        <p>Het Nederlandse onderwijs verandert snel, vooral door de vergrijzing. Omdat er steeds meer oudere mensen zijn, wordt het moeilijker om genoeg leraren te vinden. Hierdoor worden klassen groter en groeit de druk op docenten.</p>
 
-        getWeather();
-    </script>
+        <p>Flexibilisering speelt ook een grote rol. Veel leerlingen en volwassenen willen op hun eigen tempo leren. Daardoor ontstaan nieuwe manieren van onderwijs, zoals online lessen, hybride lessen en avondcursussen.</p>
+
+        <p>Daarnaast moeten scholen zich voorbereiden op de toekomst. Door robotisering en automatisering verdwijnen bepaalde banen, terwijl andere juist ontstaan. Scholen moeten leerlingen dus vaardigheden leren die ook in de toekomst belangrijk zijn, zoals logisch denken, samenwerken en creatief oplossen van problemen.</p>
+
+        <p>Het onderwijs blijft een belangrijk onderdeel van de verzorgingsstaat. Het zorgt ervoor dat iedereen kan meedoen in de samenleving. Maar het systeem moet wel blijven veranderen om bij de tijd te blijven.</p>
+    </article>
+
+
+    <!-- Artikel 2: Gezondheidszorg -->
+    <article>
+        <h2>Robotisering zorgt voor veranderingen in de zorg</h2>
+        <p class="naam">Door: <strong>Naam leerling 2</strong></p>
+
+        <p>De gezondheidszorg verandert door robotisering. Steeds vaker worden robots gebruikt om taken uit te voeren die vroeger door mensen gedaan werden. Denk aan robots die medicijnen rondbrengen, helpen bij operaties of ouderen ondersteunen.</p>
+
+        <p>Door de vergrijzing zijn er steeds meer ouderen die zorg nodig hebben, terwijl er te weinig zorgpersoneel beschikbaar is. Robots kunnen een deel van het werk overnemen, zodat zorgmedewerkers meer tijd hebben voor persoonlijke aandacht.</p>
+
+        <p>Ook is er discussie over marktwerking in de zorg. Sommige mensen vinden dat bedrijven te veel invloed krijgen en dat winst belangrijker wordt dan goede zorg. Anderen zeggen juist dat marktwerking ervoor zorgt dat de zorg beter en moderner wordt.</p>
+
+        <p>Hoe dan ook, robotisering zal de zorg blijven veranderen. Het is belangrijk dat technologie en menselijkheid goed in balans blijven.</p>
+    </article>
+
+
+    <!-- Artikel 3: Sociale Zekerheid -->
+    <article>
+        <h2>Sociale zekerheid onder druk door globalisering</h2>
+        <p class="naam">Door: <strong>Naam leerling 3</strong></p>
+
+        <p>Door globalisering werken bedrijven steeds vaker internationaal. Dit zorgt voor veranderingen op de arbeidsmarkt. Veel werknemers hebben nu tijdelijke contracten of werken als zzp’er. Dit heet flexibilisering, en het maakt het moeilijker om sociale zekerheid voor iedereen gelijk te houden.</p>
+
+        <p>Als mensen flexibel werken, hebben ze niet altijd automatisch pensioenopbouw of verzekeringen. Dat zorgt voor ongelijkheid tussen vaste werknemers en flexwerkers. Vooral jongeren hebben hier last van.</p>
+
+        <p>Door internationale concurrentie proberen landen aantrekkelijk te blijven voor bedrijven. Soms verlagen landen belastingen, waardoor er minder geld binnenkomt voor sociale voorzieningen.</p>
+
+        <p>Toch blijft sociale zekerheid belangrijk. Het beschermt mensen als ze ziek worden, hun baan kwijtraken of te weinig inkomen hebben. De uitdaging is om het systeem eerlijk en betaalbaar te houden in een wereld die steeds sneller verandert.</p>
+    </article>
+
+</div>
+
+<footer>
+    © 2025 - Schoolkrant Project Verzorgingsstaat - Havo 4 Informatica
+</footer>
+
 </body>
 </html>
